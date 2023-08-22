@@ -27,7 +27,7 @@ import './App.css'
 
 
 const App = () => {
-    const activeMenu = false
+    const activeMenu = true
     return (
         <div>
             <BrowserRouter>
@@ -82,8 +82,6 @@ const App = () => {
                                 <Route path="/color-mapping" element={<ColorMapping />} />
                                 <Route path="/pyramid" element={<Pyramid />} />
                                 <Route path="/stacked" element={<Stacked />} />
-
-
                             </Routes>
 
                         </div>
