@@ -30,7 +30,8 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 );
 
 const Navbar = () => {
-  const { currentColor,
+  const { 
+    currentColor,
     activeMenu,
     setActiveMenu,
     handleClick,
