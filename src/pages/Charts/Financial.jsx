@@ -3,9 +3,9 @@ import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, Hil
 
 import { financialChartData, FinancialPrimaryXAxis, FinancialPrimaryYAxis } from '../../data/dummy';
 import { useStateContext } from '../../context/ContextProvider';
-import { ChartsHeader } from '../../components';
+import { Header } from '../../components';
 
-const date1 = new Date();
+const date1 = new Date('2017, 1, 1');
 
 function filterValue(value) {
   if (value.x >= date1) {
@@ -19,7 +19,10 @@ const Financial = () => {
 
   return (
     <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
-      <ChartsHeader category="Financial" title="AAPLE Historical" />
+      <Header
+        category="Financial"
+        title="APLE Historical"
+      />
       <div className="w-full">
         <ChartComponent
           id="charts"
